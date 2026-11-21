@@ -1,0 +1,22 @@
+.notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  border: 1px solid;
+}
+.notice.error {
+  background: #fff2ee;
+  border-color: #f0d4ca;
+  color: #a95844;
+}
+.notice.success {
+  background: #edf6ee;
+  border-color: #cee3d0;
+  color: #3d7751;
+}

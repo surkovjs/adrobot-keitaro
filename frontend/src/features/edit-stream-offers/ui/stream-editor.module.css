@@ -1,0 +1,375 @@
+.redirect-panel {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 21px 24px;
+  margin-bottom: 18px;
+}
+.stream-icon {
+  display: grid;
+  place-items: center;
+  border: 1px solid #dce7df;
+  background: #f0f6f1;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #74927c;
+}
+.stream-overline {
+  font-size: 12px;
+  color: #9baa9e;
+  letter-spacing: 0.8px;
+  font-weight: 750;
+  margin-bottom: 6px;
+}
+.stream-overline span {
+  margin-left: 9px;
+  font-family: monospace;
+  font-weight: 400;
+}
+.redirect-panel h2 {
+  font-size: 14px;
+}
+.redirect-panel p {
+  font-size: 12px;
+  color: #92a397;
+  margin-top: 7px;
+}
+.redirect-destination {
+  margin-left: auto;
+  color: #789581;
+  background: #f5f8f5;
+  border: 1px solid #e3ebe4;
+  border-radius: 6px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  max-width: 35%;
+  overflow-wrap: anywhere;
+}
+.stream-panel {
+  margin-bottom: 24px;
+  transition: border-color 0.2s;
+}
+.stream-panel.has-changes {
+  border-color: #b8cbb7;
+}
+.stream-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 23px 24px 21px;
+}
+.stream-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.stream-title h2 {
+  font-size: 15px;
+  font-weight: 750;
+}
+.stream-toolbar {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #fafcfb;
+  border-top: 1px solid #eaf0eb;
+  border-bottom: 1px solid #eaf0eb;
+  font-size: 12px;
+  color: #93a296;
+}
+.stream-toolbar strong {
+  font-weight: 750;
+  color: #5c7966;
+}
+.stream-toolbar .danger-text {
+  color: #b26950;
+}
+.separator {
+  color: #ced9d0;
+  padding: 0 12px;
+}
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.check-label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.check-label input {
+  accent-color: #3c7650;
+}
+.distribution-bar {
+  display: flex;
+  height: 4px;
+  margin: 0;
+}
+.distribution-bar > div {
+  transition: width 0.25s;
+}
+.offers-table-wrap {
+  position: relative;
+  min-width: 0;
+  overflow: auto;
+}
+.offers-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  min-width: 510px;
+}
+.offers-table thead th {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #a0ada3;
+  text-transform: uppercase;
+  padding: 17px 24px;
+  font-weight: 750;
+  border-bottom: 1px solid #edf2ee;
+}
+.offers-table thead th:first-child {
+  width: 65%;
+}
+.offers-table td {
+  padding: 20px 24px;
+  border-bottom: 1px solid #edf2ee;
+  vertical-align: middle;
+}
+.offer-name {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.offer-symbol {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  background: #f1f6f2;
+  border: 1px solid #e1eae3;
+  border-radius: 7px;
+  color: #91ab98;
+}
+.offer-name strong,
+.offer-name a {
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.6;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.offer-name a:hover {
+  color: #438259;
+}
+.offer-name a > svg {
+  opacity: 0.35;
+}
+.offer-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #a1afa4;
+  margin-top: 6px;
+}
+.offer-meta > span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.share-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lock-button {
+  color: #b2c2b6;
+}
+.lock-button.locked {
+  background: #ecf4ed;
+  color: #5d8c6b;
+}
+.row-action {
+  text-align: right;
+}
+.delete-button {
+  color: #a4b4a8;
+}
+.delete-button:hover:not(:disabled) {
+  background: #fff1eb;
+  color: #b36b51;
+}
+.removed-row {
+  background: #fbfcfb;
+}
+.removed-row .offer-name {
+  opacity: 0.45;
+}
+.restore-button {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.add-offer-row {
+  padding: 19px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #88a18f;
+  background: #fcfdfc;
+}
+.add-offer-row > div {
+  max-width: 460px;
+}
+.add-offer-row > span {
+  font-size: 12px;
+  color: #a4b1a7;
+  white-space: nowrap;
+}
+.stream-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 19px 24px;
+  border-top: 1px solid #e8eee9;
+  background: #fafcfb;
+  border-radius: 0 0 10px 10px;
+}
+.stream-footer > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #a0afa3;
+  line-height: 1.7;
+}
+.stream-footer > div {
+  display: flex;
+  gap: 8px;
+}
+.stream-footer button {
+  font-size: 12px;
+  padding: 10px 13px;
+}
+.stream-notice {
+  padding: 0 24px;
+  margin-top: 15px;
+}
+.stream-notice > :first-child {
+  margin-bottom: 15px;
+}
+@media (max-width: 1150px) {
+  .stream-footer > span {
+    max-width: 170px;
+  }
+  .offers-table td {
+    padding: 17px;
+  }
+  .add-offer-row > span {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .stream-header {
+    flex-wrap: wrap;
+  }
+  .stream-title {
+    min-width: 0;
+  }
+  .stream-title h2 {
+    overflow-wrap: anywhere;
+  }
+  .stream-footer > div {
+    flex-wrap: wrap;
+  }
+  .redirect-panel {
+    padding: 17px;
+    flex-wrap: wrap;
+  }
+  .redirect-destination {
+    margin-left: 53px;
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .stream-header {
+    padding: 19px 17px;
+  }
+  .stream-title {
+    gap: 9px;
+  }
+  .stream-title h2 {
+    font-size: 14px;
+  }
+  .stream-toolbar {
+    padding: 12px 17px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .stream-overline {
+    font-size: 12px;
+  }
+  .stream-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .stream-footer {
+    padding: 17px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 13px;
+  }
+  .stream-footer > span {
+    max-width: none;
+    font-size: 12px;
+  }
+  .stream-footer > div {
+    justify-content: flex-end;
+  }
+  .stream-footer button {
+    font-size: 12px;
+  }
+  .add-offer-row {
+    padding: 17px;
+    gap: 9px;
+  }
+  .add-offer-row > svg {
+    display: none;
+  }
+  .offers-table {
+    min-width: 440px;
+  }
+  .offers-table thead th {
+    padding: 14px 17px;
+  }
+  .offers-table td {
+    padding: 17px 12px;
+  }
+  .offer-symbol {
+    display: none;
+  }
+  .offer-name a,
+  .offer-name strong {
+    font-size: 12px;
+  }
+  .offer-meta {
+    font-size: 12px;
+    gap: 8px;
+  }
+  .stream-notice {
+    padding: 0 17px;
+  }
+}

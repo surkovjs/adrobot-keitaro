@@ -1,0 +1,73 @@
+.environment > span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9bc9a4;
+  margin-left: auto;
+}
+.topbar {
+  height: 76px;
+  min-height: 76px;
+  border-bottom: 1px solid #e0e7e2;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  gap: 20px;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: #8b9891;
+}
+.breadcrumb strong {
+  color: #3b4c42;
+  font-weight: 600;
+}
+.environment {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+  color: #54705e;
+  white-space: nowrap;
+}
+.environment > span {
+  background: #5d9b77;
+}
+@media (max-width: 1150px) {
+  .topbar {
+    padding: 0 27px;
+  }
+}
+@media (max-width: 700px) {
+  .topbar {
+    height: 62px;
+    min-height: 62px;
+    padding: 0 19px;
+  }
+  .breadcrumb {
+    gap: 8px;
+    font-size: 12px;
+  }
+  .breadcrumb > span:first-child,
+  .breadcrumb > span:nth-child(2) {
+    display: none;
+  }
+  .environment {
+    font-size: 12px;
+  }
+}
+
+.environment.unconfigured {
+  color: #8b9891;
+}
+.environment.unconfigured > span {
+  background: #8b9891;
+}

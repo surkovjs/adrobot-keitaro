@@ -1,0 +1,39 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: 650;
+}
+.pill.green {
+  color: #488563;
+  background: #eaf4ec;
+  border: 1px solid #d5e8da;
+}
+.pill.green:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #609876;
+}
+.pill.neutral {
+  background: #f0f4f1;
+  color: #8a9b8e;
+  border: 1px solid #e2e9e4;
+}
+.pill.amber {
+  background: #fcf5df;
+  color: #a28337;
+  border: 1px solid #f1e7bf;
+}
+@media (max-width: 700px) {
+  .pill {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}

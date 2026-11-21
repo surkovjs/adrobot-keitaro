@@ -1,0 +1,25 @@
+.share-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 73px;
+}
+.share-input input {
+  padding: 9px 23px 9px 10px;
+  font-size: 14px;
+  font-weight: 650;
+  -moz-appearance: textfield;
+}
+.share-input input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.share-input span {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  color: #a7b4a9;
+  pointer-events: none;
+}
+.share-input.removed {
+  opacity: 0.4;
+}

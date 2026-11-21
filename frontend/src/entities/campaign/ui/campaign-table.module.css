@@ -1,0 +1,146 @@
+.campaign-table-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px 133px;
+  padding: 13px 24px;
+  background: #fafcfb;
+  border-top: 1px solid #edf1ee;
+  border-bottom: 1px solid #e7ece8;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #90a094;
+  font-weight: 750;
+}
+.campaign-table-head > span:last-child {
+  text-align: right;
+}
+.campaign-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px 133px;
+  align-items: center;
+  padding: 19px 24px;
+  border-bottom: 1px solid #edf1ee;
+  gap: 0;
+}
+.campaign-row:hover {
+  background: #fcfdfc;
+}
+.campaign-row > a:last-child {
+  justify-self: end;
+}
+.campaign-name {
+  display: flex;
+  gap: 13px;
+  text-align: left;
+  align-items: center;
+  min-width: 0;
+  padding: 0 16px 0 0;
+}
+.campaign-symbol {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e3eae5;
+  color: #6a8d78;
+  background: #f4f8f5;
+  flex-shrink: 0;
+}
+.campaign-name > span:last-child {
+  min-width: 0;
+}
+.campaign-name strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.campaign-name:hover strong {
+  color: #35744f;
+}
+.campaign-name small {
+  display: block;
+  margin-top: 7px;
+  color: #9aa69d;
+  font-size: 12px;
+}
+.list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 15px 24px;
+  font-size: 12px;
+  color: #98a69c;
+}
+.campaign-rows {
+  max-height: 650px;
+  overflow: auto;
+}
+@media (min-width: 1500px) {
+  .campaign-row {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+@media (max-width: 700px) {
+  .campaign-table-head {
+    grid-template-columns: minmax(0, 1fr) 78px;
+    padding: 12px 17px;
+  }
+  .campaign-table-head > span:last-child {
+    display: none;
+  }
+  .campaign-row {
+    grid-template-columns: minmax(0, 1fr) 78px;
+    padding: 17px;
+    gap: 12px;
+  }
+  .campaign-row > a:last-child {
+    display: none;
+  }
+  .campaign-symbol {
+    width: 32px;
+    height: 32px;
+  }
+  .campaign-name {
+    gap: 9px;
+    padding: 0;
+  }
+  .campaign-name strong {
+    font-size: 12px;
+  }
+  .campaign-name small {
+    font-size: 12px;
+  }
+  .campaign-name small span {
+    display: none;
+  }
+  .list-footer {
+    padding: 14px 17px;
+    font-size: 12px;
+  }
+}
+
+.page-size,
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.page-size select {
+  border: 1px solid #dfe6e0;
+  border-radius: 6px;
+  background: #fff;
+  color: #3b4c42;
+  font: inherit;
+  padding: 7px 10px;
+}
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
